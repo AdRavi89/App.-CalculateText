@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Statistik Teks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Hitung Statistik Teks</h2>
+  <textarea id="inputText" rows="4" cols="50" placeholder="Masukkan kalimat atau paragraf"></textarea>
+  <br><br>
+  <button onclick="hitungStatistik()">Hitung</button>
+  <button onclick="clearText()">Clear</button>
+
+  <table id="resultTable">
+    <tr>
+      <th>Jenis</th>
+      <th>Jumlah</th>
+    </tr>
+    <tr>
+      <td>Huruf</td>
+      <td id="jumlahHuruf">0</td>
+    </tr>
+    <tr>
+      <td>Kata</td>
+      <td id="jumlahKata">0</td>
+    </tr>
+    <tr>
+      <td>Angka</td>
+      <td id="jumlahAngka">0</td>
+    </tr>
+    <tr>
+      <td>Tanda Baca</td>
+      <td id="jumlahTandaBaca">0</td>
+    </tr>
+    <tr>
+      <td>Spasi</td>
+      <td id="jumlahSpasi">0</td>
+    </tr>
+    <tr>
+      <td>Enter</td>
+      <td id="jumlahEnter">0</td>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
